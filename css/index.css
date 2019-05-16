@@ -1,0 +1,89 @@
+body{
+	margin: 0 auto;
+	background-color: #e8e9ea;
+}
+h1{
+	text-align: center;
+
+}
+.game {
+	display: grid;
+	grid-template-columns: 30% 70%
+}
+.game .fild{
+	height: 600px;
+	width: 500px;
+	left: calc(50% - 250px);
+	margin-right: auto;
+	background-color: #fee8e9;
+	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.game .catchedBalls{
+	height: 250px;
+	width: 75px;
+	margin-left: calc(50% - 75px);;
+	background-color: #fee8e9;
+	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.game .catchedBalls .green{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transition: all .3s;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	background-color: #419184;
+}
+.game .catchedBalls .red{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transition: all .3s;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	background-color: #651662;
+}
+.game .catchedBalls .blue{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transition: all .3s;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	background-color: #315479;
+}
+.game .catchedBalls .yelow{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transition: all .3s;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	background-color: #ffe451;
+}
+.game .fild .ball{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	transition: all .3s;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.game .fild .green{
+	background-color: #419184;
+	z-index: 2;
+	box-shadow:
+
+}
+.game .fild .red{
+	background-color: #651662;
+	z-index: 3;
+}
+.game .fild .blue{
+	background-color: #315479;
+	z-index: 4;
+}
+.game .fild .yelow{
+	background-color: #ffe451;
+	z-index: 5;
+}
